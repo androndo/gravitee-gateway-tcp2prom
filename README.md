@@ -20,4 +20,11 @@ Tested with:
         port: 8123
    ```
 3. Start exporter and check metrics:  
-   `curl localhost:8080`
+   ```
+   docker pull androndo/gravitee-gateway-tcp2prom
+   docker run --rm --network=host --name tcp2prom androndo/gravitee-gateway-tcp2prom
+   curl localhost:8080
+   ```
+
+## Options
+Just ispect Dockerfile for ENV.
