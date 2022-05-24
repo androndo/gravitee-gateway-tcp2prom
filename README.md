@@ -23,7 +23,7 @@ Tested with:
    ```
    docker pull androndo/gravitee-gateway-tcp2prom
    docker run --rm --network=host --name tcp2prom androndo/gravitee-gateway-tcp2prom
-   curl localhost:8080
+   curl localhost:8080/metrics
    ```
 
 ## Options
